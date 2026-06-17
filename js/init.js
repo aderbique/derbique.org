@@ -19,18 +19,30 @@
 /* Smooth Scrolling
 ------------------------------------------------------ */
 
-   $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
+   $('.smoothscroll').on('click', function (e) {
+        e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+        var target = $(this).attr('href');
+        var $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
+        if ($target.length) {
+            // compute offset accounting for fixed header
+            var headerHeight = $('header').outerHeight() || 0;
+            var scrollTo = $target.offset().top - headerHeight;
+            if (scrollTo < 0) scrollTo = 0;
+
+            $('html, body').stop().animate({
+                scrollTop: scrollTo
+            }, 800, 'swing', function () {
+                // use pushState to avoid instant jump
+                if (history.pushState) {
+                    history.pushState(null, null, target);
+                } else {
+                    window.location.hash = target;
+                }
+            });
+        }
+    });
 
 
 /*----------------------------------------------------*/
