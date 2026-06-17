@@ -805,3 +805,15 @@ properly.
 
 
 
+
+/* Improve contrast for key site sections (About, Resume, Certificates, Testimonials, Keys, Contact) */
+#about, #resume, #certificates, #testimonials, #keys, #contact {
+  color: #222; /* darker body text for better contrast */
+}
+#about p, #resume p, #certificates p, #testimonials p, #keys p, #contact p {
+  color: #333;
+}
+/* Make headings in these sections more prominent */
+#about h2, #resume h2, #certificates h2, #testimonials h2, #keys h2, #contact h2 {
+  color: #111;
+}
