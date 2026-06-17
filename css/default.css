@@ -817,3 +817,40 @@ properly.
 #about h2, #resume h2, #certificates h2, #testimonials h2, #keys h2, #contact h2 {
   color: #111;
 }
+
+/* Modern skills layout: keep it minimal and high-contrast */
+.modern-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.modern-skills li {
+  background: rgba(0,0,0,0.05);
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'opensans-bold', sans-serif;
+  box-shadow: none;
+}
+
+/* Ensure strong contrast for skills and content below resume */
+#skills, #certificates, #testimonials, #keys, #contact, footer {
+  color: #111 !important;
+}
+#skills p, #certificates p, #testimonials p, #keys p, #contact p, footer p {
+  color: #222 !important;
+}
+
+/* Slightly emphasize headings */
+#skills h2, #certificates h2, #testimonials h2, #keys h2, #contact h2 {
+  color: #000 !important;
+}
+
+/* Make resume area text easier to read */
+.row.education .main-col, .row.work .main-col {
+  color: #222;
+}
