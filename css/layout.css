@@ -318,12 +318,51 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
-   display: inline-block;
-  	height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
+  /* subtle gradient fill, will animate width */
+  background: linear-gradient(90deg, #11ABB0 0%, #0e8f93 100%);
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 6px;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
+  transition: width 900ms cubic-bezier(.2,.9,.2,1);
 }
+
+/* track (unfilled) style: use darker track and rounded corners */
+.bars .skills li {
+ position: relative;
+ background: #222; /* track color */
+ height: 42px;
+ margin-bottom: 24px;
+ border-radius: 6px;
+ padding: 0 12px; /* space for percent */
+}
+
+/* percent label */
+.skill-percent {
+ position: absolute;
+ right: 12px;
+ top: 50%;
+ transform: translateY(-50%);
+ color: rgba(255,255,255,0.95);
+ font-size: 13px;
+ font-family: 'opensans-bold', sans-serif;
+}
+
+/* ensure skill label text sits above the bar */
+.bars li em {
+ position: relative;
+ z-index: 2;
+ display: block;
+ margin: 8px 0 0 6px;
+ color: #bfc6c9;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ font-size: 13px;
+}
+
+/* Make sure the fill sits below label text */
+.bar-expand { z-index: 1; }
 
 .photoshop {
   	width: 60%;
