@@ -297,32 +297,14 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li {
    position: relative;
-   margin-bottom: 48px; /* restore larger spacing similar to 2025 */
+   margin-bottom: 24px;
    background: #ccc;
    height: 42px;
    border-radius: 3px;
-   padding: 0; /* remove flex padding so fills align to edges */
+   display: flex;
+   align-items: center;
+   padding: 0 12px;
 }
- 
-/* label pill above the bar (2025 style) */
-.bars li em {
-  position: absolute;
-  left: 14px;
-  top: -16px;
-  background: #6ea8db; /* archived blue tag color */
-  color: #ffffff;
-  padding: 4px 8px;
-  border-radius: 3px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  z-index: 4; /* sit above the fill */
-  font-weight: 700;
-}
- 
-/* ensure em used elsewhere is not duplicated */
-.bars li em.skill-label { position: absolute; }
-
 .bars li em {
   font: 13px 'opensans-bold', sans-serif;
   color: #ffffff;
