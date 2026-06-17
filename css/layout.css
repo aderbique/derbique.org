@@ -411,32 +411,6 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: jquery 2s ease;
 }
 
-
-/* custom modern skills mapped to 2025 visuals */
-.claude { width: 50%; -moz-animation: claude 2s ease; -webkit-animation: claude 2s ease; }
-.github-actions { width: 70%; -moz-animation: github-actions 2s ease; -webkit-animation: github-actions 2s ease; }
-.opentelemetry { width: 65%; -moz-animation: opentelemetry 2s ease; -webkit-animation: opentelemetry 2s ease; }
-.kubernetes { width: 85%; -moz-animation: kubernetes 2s ease; -webkit-animation: kubernetes 2s ease; }
-.gcp { width: 75%; -moz-animation: gcp 2s ease; -webkit-animation: gcp 2s ease; }
-.aws { width: 80%; -moz-animation: aws 2s ease; -webkit-animation: aws 2s ease; }
-.golang { width: 78%; -moz-animation: golang 2s ease; -webkit-animation: golang 2s ease; }
-
-@-moz-keyframes claude { 0% { width:0px;} 100% { width:50%; } }
-@-moz-keyframes github-actions { 0% { width:0px;} 100% { width:70%; } }
-@-moz-keyframes opentelemetry { 0% { width:0px;} 100% { width:65%; } }
-@-moz-keyframes kubernetes { 0% { width:0px;} 100% { width:85%; } }
-@-moz-keyframes gcp { 0% { width:0px;} 100% { width:75%; } }
-@-moz-keyframes aws { 0% { width:0px;} 100% { width:80%; } }
-@-moz-keyframes golang { 0% { width:0px;} 100% { width:78%; } }
-
-@-webkit-keyframes claude { 0% { width:0px;} 100% { width:50%; } }
-@-webkit-keyframes github-actions { 0% { width:0px;} 100% { width:70%; } }
-@-webkit-keyframes opentelemetry { 0% { width:0px;} 100% { width:65%; } }
-@-webkit-keyframes kubernetes { 0% { width:0px;} 100% { width:85%; } }
-@-webkit-keyframes gcp { 0% { width:0px;} 100% { width:75%; } }
-@-webkit-keyframes aws { 0% { width:0px;} 100% { width:80%; } }
-@-webkit-keyframes golang { 0% { width:0px;} 100% { width:78%; } }
-
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
   100% { width: 60%;  }
