@@ -817,28 +817,3 @@ properly.
 #about h2, #resume h2, #certificates h2, #testimonials h2, #keys h2, #contact h2 {
   color: #111;
 }
-
-/* Skill bars: concise, high-contrast */
-.skill-list { display: flex; flex-direction: column; gap: 12px; }
-.skill { display:flex; flex-direction:column; gap:6px; }
-.skill-label { font-weight:700; color:#0b0b0b; font-family:'opensans-bold',sans-serif; }
-.skill-bar { background: rgba(0,0,0,0.08); height:10px; border-radius:6px; overflow:hidden; }
-.skill-fill { height:100%; background: linear-gradient(90deg,#2b8cff,#0066ff); border-radius:6px; }
-
-/* Ensure strong contrast for skills and content below resume */
-#skills, #certificates, #testimonials, #keys, #contact, footer {
-  color: #111 !important;
-}
-#skills p, #certificates p, #testimonials p, #keys p, #contact p, footer p {
-  color: #222 !important;
-}
-
-/* Slightly emphasize headings */
-#skills h2, #certificates h2, #testimonials h2, #keys h2, #contact h2 {
-  color: #000 !important;
-}
-
-/* Make resume area text easier to read */
-.row.education .main-col, .row.work .main-col {
-  color: #222;
-}
