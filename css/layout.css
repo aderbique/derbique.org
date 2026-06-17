@@ -319,7 +319,7 @@ ul#nav li.current a { color: #F06000; }
    margin: 0;
    padding-right: 24px;
   /* subtle gradient fill, will animate width */
-  background: linear-gradient(90deg, #11ABB0 0%, #0e8f93 100%);
+  background: linear-gradient(90deg, #00cccc 0%, #00a3a3 100%) !important;
   display: inline-block;
   height: 42px;
   line-height: 42px;
